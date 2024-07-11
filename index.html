@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="=UTF 8" /> 
+        <meta name="author" content="Shruti Ramdurg" />
+        <meta name="description" content="This page contains all the things that i'm learing how to create my portfolio website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Website</title>
+        <style>
+            * {
+            box-sizing: border-box;
+            }
+            body {
+            font-family: Arial, Helvetica, sans-serif;
+            }
+            header {
+            background-color: pink;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: grey;
+            }
+            nav {
+            float: left;
+            width: 20%;
+            height: 300px; /* only for demonstration, should be removed */
+            background: rgb(243, 145, 161)
+            padding: 20px;
+            }
+            article {
+            float: left;
+            padding: 20px;
+            width: 80%;
+            background-color: #ec8b8b;
+            height: 300px; /* only for demonstration, should be removed */
+            }
+            footer{
+                background-color: rgb(219, 165, 176);
+                padding: 30px;
+                text-align: center;
+                font-size: medium;
+                color: black;
+            }
 
+        </style>
     </head>
     <body>
-        <h1>Demo Webpage</h1>
-        <p>Hello, my name is Shruti Ramdurg and this's the first assignment of my FSD class</p>
-        <p>If you want to take a look at what i've learnt so far, click on the link below:</p>
-        <a href="https://github.com/shrutiramdurg/FSD">Click me!</a>
+        <header>
+            <h3>Hello World, this is my Portfolio Website</h3>
+        </header>
+        
+        <section>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">View my projects</a>
+                    </li>
+                    <li>
+                        <a href="#">View my achievements</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <article>
+            <h3>Introduction</h3>
+            <p style="color: black;">My name is Shruti Ramdurg and I'm a third year Computer Science student at MITWPU. I'm driven by my love for problem solving and math. 
+        If you want to take a look at what i've learnt and created so far, click on the link below:
+        <a href="https://github.com/shrutiramdurg/FSD">This is the link to my github repository for this course</a>
+        </p>
+        </article>
+        <footer>
+            <p>This is a website made as part of my FSD course.</p
+        </footer>
     </body>
 </html>
