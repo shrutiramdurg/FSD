@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <!--
+        <table>
+            <tr>
+                <td>Red</td>
+                <td><input type="button" id="redb" onclick="document.body.style.backgroundColor='Red';"></td>
+            </tr>
+            <tr>
+                <td>Green</td>
+                <td><input type="button" id="greenb" onclick = "document.body.style.backgroundColor='Green';"></td>
+            </tr>
+        </table>
+        <script>
+            document.getElementById("redb").addEventListener("click",function()
+        {
+            changeColor("red")
+        });
+        changeColor(x) {
+            document.body.style.backgroundColor = x;
+        }
+        </script>
+        -->
+        <table>
+            <tr>
+                <td>Number 1:</td>
+                <td><input type="number" id="num1"></td>
+            </tr>
+            <tr>
+                <td>Number 2:</td>
+                <td><input type="number" id="num2"></td>
+            </tr>
+            <tr>
+                <td>Addition: </td>
+                <td><label id="Addition"></label></td>
+            </tr>
+            <tr>
+                <td><button id="addb">Click here to add</button></td>
+            </tr>
+        </table>
+        <script>
+            document.getElementById("addb").addEventListener("click",function(){
+                let a = document.getElementById("num1").value;
+                let b = document.getElementById("num2").value;
+                addition(a,b);
+            });
+            function addition(a,b) {
+                let c = 0;
+                c = Number(a) + Number(b);
+                document.getElementById("Addition").innerHTML=c;
+            }
+        </script>
+        
+    </body>
+</html>
